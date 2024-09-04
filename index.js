@@ -27,6 +27,4 @@ app.get('/:command', (req, res) => {
     res.json({ message });
 });
 
-app.listen(port, () => {
-    console.log(`API corriendo en http://localhost:${port}`);
-});
+app.listen();
