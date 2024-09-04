@@ -24,7 +24,7 @@ app.get('/:command', (req, res) => {
             message = `Comando no reconocido, ${username}.`;
     }
 
-    res.json({ message });
+    res.json( message );
 });
 
 app.listen();
