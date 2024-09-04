@@ -45,14 +45,14 @@ const usuarioTacticasDBZ = [
 
 const resultadosDBZ = [
   "gana con las justas 🏆",
-  "gana fácil 💪",
+  "gana fácil ",
   "le costó mucho ganar 😓",
-  "gana por poco 😏",
+  "gana por poco  ",
   "se lleva el triunfo 🥇",
   "demuestra su superioridad 🌟",
   "supera al rival con habilidad 🚀",
   "vence con estilo 💥",
-  "triunfa con esfuerzo 💪",
+  "triunfa con esfuerzo ",
   "obtiene una victoria apretada 🏅",
   "gana con determinación 🔥",
 ];
@@ -86,7 +86,9 @@ function battlez(username) {
 
   let resultado;
   if (poderUsuario > poderPersonaje) {
-    resultado = `${username} ${resultadosDBZ[rnd(resultadosDBZ.length)]} ${emojis[rnd(emojis.length)]}`;
+    resultado = `${username} ${resultadosDBZ[rnd(resultadosDBZ.length)]} ${
+      emojis[rnd(emojis.length)]
+    }`;
   } else if (poderUsuario < poderPersonaje) {
     resultado = `${personaje} ${resultadosDBZ[rnd(resultadosDBZ.length)]} LUL`;
   } else {
