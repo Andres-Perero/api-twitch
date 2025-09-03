@@ -4,10 +4,12 @@ const port = process.env.PORT || 3000;
 
 const battlez = require('./src/dbz');
 const battleDigimon = require('./src/digimon');
+const caracola = require('./src/caracola');
 
 app.get('/:command', (req, res) => {
     const command = req.params.command.toLowerCase();
     const username = req.query.user || "Usuario";
+    const question = req.query.q || req.query.question;
 
     let message;
     switch (command) {
@@ -16,6 +18,9 @@ app.get('/:command', (req, res) => {
             break;
         case 'battledigimon':
             message = battleDigimon(username);
+            break;
+        case 'caracola':
+            message = caracola(username, question);
             break;
         default:
             message = `Comando no reconocido, ${username}.`;
