@@ -66,6 +66,16 @@ module.exports = function caracola(username = "Usuario", question) {
     "deberia",
     "tendría",
     "tendria",
+    "puedo",
+    "yo",
+    "me",
+    "mi",
+    "nos",
+    "nosotros",
+    "vos",
+    "vosotros",
+    "yo",   
+    
   ];
 
   // Función para detectar si el texto parece una pregunta
